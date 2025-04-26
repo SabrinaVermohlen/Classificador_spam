@@ -1,35 +1,34 @@
-# Classificador de Spam em SMS
+# 📩 Classificador de Spam em SMS
 
-Projeto desenvolvido para classificar mensagens de SMS como "spam" ou "ham" (não spam) usando técnicas de Machine Learning. A abordagem principal foi a utilização de Máquinas de Vetores de Suporte (SVM) junto com vetorização de texto.
+Projeto criado para classificar mensagens de SMS como "spam" ou "ham" (mensagens legítimas), utilizando técnicas de Machine Learning. A principal abordagem foi o uso de SVM (Máquinas de Vetores de Suporte) combinada com vetorização de texto.
 
-## Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
-- Python
-- Pandas
-- Scikit-learn
-- Seaborn
-- Matplotlib
+• Python  
+• Pandas  
+• Scikit-learn  
+• Seaborn  
+• Matplotlib
 
-## Sobre o projeto
+## ✨ Sobre o projeto
 
-O objetivo foi construir um modelo capaz de identificar se uma mensagem recebida é spam ou não. Para isso, foi usado o dataset "SMSSpamCollection", que contém mensagens já rotuladas.
+A ideia foi construir um modelo capaz de identificar se uma mensagem é spam ou não. Para isso, foi utilizado o dataset "SMSSpamCollection", que contém mensagens rotuladas como "spam" ou "ham".
 
-O processo inclui:
-- Carregamento e análise exploratória dos dados
-- Visualização da distribuição de mensagens spam e ham
-- Pré-processamento com transformação dos textos usando CountVectorizer
-- Construção de um pipeline de Machine Learning combinando vetorização e SVM
-- Otimização dos hiperparâmetros através de GridSearchCV
+As etapas desenvolvidas foram:
+• Análise exploratória e visualização da distribuição entre spam e ham  
+• Pré-processamento dos textos usando CountVectorizer  
+• Criação de um pipeline combinando a vetorização e o modelo SVM  
+• Otimização de hiperparâmetros com GridSearchCV  
+• Análise dos erros mais comuns, como falsos positivos e falsos negativos
 
-Além disso, foram analisados os erros cometidos pelo modelo, como falsos positivos e falsos negativos.
+## 📊 Resultados finais
 
-## Resultados finais
+Após a otimização, o modelo obteve resultados bem consistentes, avaliados pelas principais métricas de classificação:
 
-Após a otimização, o modelo apresentou bons resultados de classificação, avaliados através de métricas como acurácia, precisão, recall e F1-score. A matriz de confusão também foi gerada para identificar os principais erros de classificação.
+• Acurácia geral do modelo  
+• Precisão para identificar mensagens de spam  
+• Recall para medir o quanto de spam foi corretamente detectado  
+• F1-Score equilibrando precisão e recall  
+• Matriz de confusão para análise detalhada dos erros
 
-Algumas métricas observadas:
-- Acurácia média nos testes
-- Precisão na detecção de mensagens de spam
-- Recall mostrando o quanto o modelo foi capaz de identificar corretamente os spams
-
-Esses resultados mostram que a abordagem utilizando SVM foi bastante eficiente para o problema proposto.
+Esses resultados mostram que a abordagem escolhida foi eficiente para o problema proposto, com bom desempenho na detecção de mensagens indesejadas.
